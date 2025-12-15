@@ -22,6 +22,16 @@
             --gradient-end: #14b8a6;
         }
 
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
         header {
             background: linear-gradient(120deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
             color: white;
@@ -153,8 +163,13 @@
             transition: color 0.5s ease;
         }
 
+        .contact a:visited {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
         .contact a:hover {
-            text-decoration: underline;
+            color: var(--accent-color-dark);
         }
 
         .important-note {
@@ -169,7 +184,12 @@
             color: var(--accent-color);
             font-weight: 400;
             transition: color 0.5s ease;
-            text-decoration: underline;
+            text-decoration: none;
+        }
+
+        .important-note a:visited {
+            color: var(--accent-color);
+            text-decoration: none;
         }
 
         @media (max-width: 768px) {
